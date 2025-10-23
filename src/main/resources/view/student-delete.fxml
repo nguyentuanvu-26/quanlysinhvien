@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.studentmanagement.controller.DeleteStudentController">
+    <Label fx:id="lblConfirm" style="-fx-font-size: 14px;"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Xóa" onAction="#deleteStudent"/>
+        <Button text="Hủy" onAction="#closeForm"/>
+    </HBox>
+</VBox>

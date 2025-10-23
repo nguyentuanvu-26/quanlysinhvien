@@ -1,0 +1,6 @@
+com\example\studentmanagement\MainApp.class
+com\example\studentmanagement\model\Student.class
+com\example\studentmanagement\controller\DeleteStudentController.class
+com\example\studentmanagement\controller\MainController.class
+com\example\studentmanagement\controller\EditStudentController.class
+com\example\studentmanagement\controller\AddStudentController.class

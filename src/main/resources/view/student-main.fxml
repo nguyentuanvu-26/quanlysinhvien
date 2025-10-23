@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.studentmanagement.controller.MainController">
+    <!-- Phần header -->
+    <top>
+        <VBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="QUẢN LÝ SINH VIÊN" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+            <HBox alignment="CENTER" spacing="15">
+                <Button text="+ Thêm sinh viên" onAction="#openAddForm"/>
+                <Button text="✏️ Sửa sinh viên" onAction="#openEditForm"/>
+                <Button text="🗑️ Xóa sinh viên" onAction="#openDeleteForm"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Phần table -->
+    <center>
+        <VBox spacing="5">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <TableView fx:id="tableStudent" prefHeight="400">
+                <columns>
+                    <TableColumn fx:id="colMaSV" text="Mã SV" prefWidth="100"/>
+                    <TableColumn fx:id="colTenSV" text="Tên SV" prefWidth="200"/>
+                    <TableColumn fx:id="colTuoi" text="Tuổi" prefWidth="80"/>
+                    <TableColumn fx:id="colLop" text="Lớp" prefWidth="120"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.studentmanagement.controller.AddStudentController">
+    <Label text="Thêm sinh viên mới" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <TextField fx:id="txtMaSV" promptText="Mã sinh viên"/>
+    <TextField fx:id="txtTenSV" promptText="Tên sinh viên"/>
+    <TextField fx:id="txtTuoi" promptText="Tuổi"/>
+    <TextField fx:id="txtLop" promptText="Lớp"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Lưu" onAction="#addStudent"/>
+        <Button text="Hủy" onAction="#closeForm"/>
+    </HBox>
+</VBox>
